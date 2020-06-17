@@ -1,0 +1,65 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+\usepackage{amsmath,amsfonts,amsthm,amssymb,varioref,times}
+
+
+
+%pour ecrire en français avec les accents
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} % load a font with all the characters
+\usepackage{units}
+
+%pour faire des cadres
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+
+%chemistry frmulae
+\usepackage{chemfig}
+\usepackage{chemformula}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=0.8]
+
+% baseline
+\draw (1,0) -- (18,0) ; 
+
+%triangle 
+\draw[very thick] (5,0) -- (5,10) -- (10,0) -- (5,0); 
+\draw (5,0) node [below]{$A$} ; 
+\draw (5,10) node [above]{$C$} ; 
+\draw (10,0) node [below]{$B$} ; 
+\draw (16,0) node [below]{$D$} ; 
+\draw (5,4.36) node [right]{$I$} ; 
+\draw (8.5,4) node [right]{$J$} ; 
+\draw (5,0) rectangle (5.5,0.5) ; 
+
+%rayon lumineux
+\draw[dashed, ->] (1,4) -- (2,4) ; 
+\draw[dashed, ->] (2,4) -- (5,4) -- (7.9,4) -- (16,0) ;  
+
+%angles 
+\draw (4.75,4) rectangle (5,4.25) ; 
+\draw (14.9,0.5) arc (150:180:1cm);
+\draw (5,9) arc (270:298:1cm) ; 
+
+
+
+\end{tikzpicture}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

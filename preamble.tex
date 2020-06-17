@@ -1,0 +1,100 @@
+%\documentclass[12pt,a4paper]{article}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+\usepackage{amsmath,amsfonts,amsthm,amssymb,varioref,times}
+\usepackage{gensymb}
+ \usepackage[explicit]{titlesec}
+    % Raised Rule Command:
+    % Arg 1 (Optional) - How high to raise the rule
+    % Arg 2 - Thickness of the rule
+    \newcommand{\raisedrulefill}[2][0ex]{\leaders\hbox{\rule[#1]{0.5pt}{#2}}\hfill}
+    \titleformat{\section}{\Large\bfseries}{\thesection. }{0em}{#1\,\raisedrulefill[.5ex]{0.5pt}}
+
+%to resume numbering in a list
+\usepackage{enumitem}
+
+%pour ecrire en français avec les accents
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} % load a font with all the characters
+\usepackage{units}
+
+%Image-related packages
+\usepackage{wrapfig}
+\usepackage{float, graphicx}
+\graphicspath{ {./img/} }
+\usepackage{subcaption}
+\usepackage[export]{adjustbox}
+
+
+%pour faire des cadres
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+
+%chemistry frmulae
+\usepackage{chemfig}
+\usepackage{chemformula}
+ 
+% pour ecrire sur +sieurs colonnes
+\usepackage{multicol}
+\setlength{\columnseprule}{0.25pt}
+\setlength{\columnsep}{60pt}
+
+% Fusion de lignes de tableaux.
+\usepackage{multirow}
+
+% Position verticale des lettres dans la ligne de tableau.
+\usepackage{array}
+
+
+% MATH -----------------------------------------------------------
+\newcommand{\To}{\longrightarrow}
+\newcommand{\gpl}{\; g\cdot L^{-1}}
+\newcommand{\gpmol}{\; g\cdot mol^{-1}}
+\newcommand{\mpl}{\; mol\cdot L^{-1}}
+\newcommand{\mps}{\; m\cdot s^{-1}}
+\newcommand{\mpss}{\; m\cdot s^{-2}}
+\newcommand{\es}[1]{\cdot10^{#1}}
+\newcommand{\eng}[1]{(\textcolor{purple}{= #1})}
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+
+\newenvironment{eg}
+ {\begin{shaded} \textbf{Exemple:} } { \end{shaded}}
+
+\newcounter{exo}
+\newenvironment{exo}[1][]
+ {\refstepcounter{exo} \begin{shaded}\noindent $\triangleright \quad$\textbf{Exercice~\theexo. #1} } { \end{shaded}}    
+
+\newenvironment{defn}[1]
+ {\begin{leftbar}\noindent \textbf{Définition :\textit{ \quad #1} } } { \end{leftbar}} 
+\newenvironment{rmrq}
+ {\begin{shaded} \textbf{Remarque: Pour aller plus loin ...}\\ \itshape } { \end{shaded}}
+
+\definecolor{shadecolor}{gray}{0.9}
+
+
+
+% parametres des entete et de pieds de pages
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{SciPhy : 2nde}
+\rhead{Ch. 12 - Systèmes Optiques}
+\chead{2019}
+\rfoot{Page \thepage}
+\lfoot{SZayyani}
+\title{Chapitre 12 - Systèmes optiques}
+\date{}
+\author{}
+
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{2mm}
+
+
+%\begin{document}
+%\maketitle
+%\vspace{-1.9cm}
+
+%\end{document}
